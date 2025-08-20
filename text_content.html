@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Content</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .content-box {
+            white-space: pre-wrap;
+            padding: 1rem;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            background: #f9f9f9;
+            overflow-wrap: break-word;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #166088;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Text Content</h1>
+        <div class="content-box">{{ content }}</div>
+        <a href="javascript:history.back()" class="back-link">← Back to scanner</a>
+    </div>
+</body>
+</html>
